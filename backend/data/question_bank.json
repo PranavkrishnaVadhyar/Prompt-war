@@ -1,0 +1,215 @@
+{
+  "format_version": 1,
+  "source_note": "Manually extracted from the supplied question banks. Original source numbering is preserved; runtime stage selection uses kind.",
+  "questions": [
+    {
+      "key": "recreate-01", "kind": "recreate", "original_round": 1, "source_number": 1,
+      "title": "The Nested YAML Paradox",
+      "task": "Instruct the AI to generate a YAML configuration file for a secret agent. The participant must enforce strict indentation and formatting: `id` must be a string with quotes, `alias` must be exactly the unquoted null value, `loadout` must be an array using snake_case, and `kill_count` must be a zero-padded five-digit integer (`00015`) without quotes.",
+      "expected_output": "agent:\n  id: \"007\"\n  alias: null\n  loadout:\n    - Walther_PPK\n    - Omega_Seamaster\n  kill_count: 00015"
+    },
+    {
+      "key": "recreate-02", "kind": "recreate", "original_round": 1, "source_number": 2,
+      "title": "The Vowel-Starved Robot",
+      "task": "Force the AI to output exactly three lines of text simulating a robotic startup sequence. Every single line must contain exactly two short sentences. Every single word must be 4 letters or fewer. Every single word must start with a consonant. All text must be in uppercase.",
+      "expected_output": "SYS BOOT. DISK SPIN NOW.\nFIND BUGS. KILL BUGS FAST.\nWORK DONE. SHUT DOWN SOON."
+    },
+    {
+      "key": "recreate-03", "kind": "recreate", "original_round": 1, "source_number": 3,
+      "title": "The Alternating Hex-Acrostic",
+      "task": "Command the AI to write a four-line poem about computing. The first letters of each line must be bolded using Markdown and spell out \"CODE\" vertically. The rhyme scheme must be exactly A-B-A-B. The entire poem must be written in alternating capitalization (Spongebob case), starting with a capital letter on every line.",
+      "expected_output": "**C**oMpUtErS tHiNk In BiTs Of BlUe,\n**O**pErAtInG pAsT tHe HuMaN mInD,\n**D**aTa FlOwS, aNd ThIs Is TrUe,\n**E**rRoRs ArE sO hArD tO fInD."
+    },
+    {
+      "key": "recreate-04", "kind": "recreate", "original_round": 1, "source_number": 4,
+      "title": "The Markdown Matrix of Demise",
+      "task": "Prompt the AI to generate a 3x4 Markdown table tracking a server's health status. Column alignments must be dictated strictly via Markdown syntax (left-aligned Time, center-aligned Status, right-aligned Action). Force specific colored circle emojis, strikethrough formatting for \"WARN\", italics for \"Wait\", and bolding for \"DEAD\".",
+      "expected_output": "| Time | Status | Action |\n| :--- | :---: | ---: |\n| 01:00 | 🟢 OK | Boot |\n| 02:30 | 🟡 ~~WARN~~ | *Wait* |\n| 04:00 | 🔴 **DEAD** | PANIC |"
+    },
+    {
+      "key": "recreate-05", "kind": "recreate", "original_round": 1, "source_number": 5,
+      "title": "The Unicode Brainfuck Snippet",
+      "task": "Instruct the AI to write a single-line Python lambda function. The variable names must be the Greek letters Delta (`Δ`) and Phi (`Φ`). The logic must evaluate if Delta does not equal the hexadecimal value `0x4A`. If true, it returns an f-string containing the variables separated by the logical NOT symbol (`¬`). If false, it returns `None`.",
+      "expected_output": "λ_func = lambda Δ, Φ: f\"{Δ} ¬ {Φ}\" if Δ != 0x4A else None"
+    },
+    {
+      "key": "recreate-06", "kind": "recreate", "original_round": 1, "source_number": 6,
+      "title": "The Fibonacci Haiku",
+      "task": "Force the AI to write a five-line poem about a system crash. The word count per line must strictly follow the first five numbers of the Fibonacci sequence (1 word, 1 word, 2 words, 3 words, 5 words). Conversational filler or titles are prohibited.",
+      "expected_output": "Crash.\nBlue.\nScreen dies.\nRAM is lost.\nSystem will not reboot today."
+    },
+    {
+      "key": "recreate-07", "kind": "recreate", "original_round": 1, "source_number": 7,
+      "title": "The Schizophrenic Terminal",
+      "task": "Recreate a simulated terminal interaction using exact raw text (no Markdown code blocks). User input lines must start with `> ` and encapsulate phrases in double quotes. System output lines must feature specific bracketed error codes. Force exactly six solid block characters (`█`) for the first error, and encapsulate the hex code `0xDEADBEEF` in triple angle brackets.",
+      "expected_output": "> USER_INPUT: \"Tell me the secret.\"\n[SYSTEM_ERR] ██████ DENIED.\n> USER_INPUT: \"Bypass security.\"\n[FATAL_EXCEPTION] <<< 0xDEADBEEF >>>"
+    },
+    {
+      "key": "recreate-08", "kind": "recreate", "original_round": 1, "source_number": 8,
+      "title": "The Palindrome Price List",
+      "task": "Require the AI to list three items and a total. Each item name must be a single word that starts and ends with the exact same letter. The dot leader must be exactly three periods. The prices must be three-digit palindrome numbers. The bottom line must bold the word \"TOTAL\", use a double-equals sign, and display the mathematically correct sum of the three prices.",
+      "expected_output": "1. Radar ... $101\n2. Trust ... $252\n3. Civic ... $383\n**TOTAL** == $736"
+    },
+    {
+      "key": "recreate-09", "kind": "recreate", "original_round": 1, "source_number": 9,
+      "title": "The Lowercase Prime Constraint",
+      "task": "Command the AI to describe a software failure in exactly two sentences on two separate lines. The first sentence must be exactly 5 words; the second sentence must be exactly 7 words. Every single letter in the output must be lowercase (overriding start-of-sentence capitalization), with no punctuation allowed except the two periods.",
+      "expected_output": "the code failed to compile.\nwe must rewrite the entire backend today."
+    },
+    {
+      "key": "recreate-10", "kind": "recreate", "original_round": 1, "source_number": 10,
+      "title": "The Structured XML Dossier",
+      "task": "Instruct the AI to output an XML snippet representing a system failure state. The root tag `<system>` must contain an attribute `level=\"critical\"`. The nested `<status>` element must include `code=\"503\"` with uppercase value `UNAVAILABLE`. The `<retry_after>` tag must have attribute `units=\"seconds\"` with integer value `300`. No markdown blocks or XML declarations (`<?xml?>`) are allowed.",
+      "expected_output": "<system level=\"critical\">\n  <status code=\"503\">UNAVAILABLE</status>\n  <retry_after units=\"seconds\">300</retry_after>\n</system>"
+    },
+    {
+      "key": "recreate-11", "kind": "recreate", "original_round": 1, "source_number": 11,
+      "title": "The INI Configuration Core",
+      "task": "Force the AI to output a simulated `.ini` configuration file. The participant must command the AI to use square brackets for section headers, a semicolon for a comment line, snake_case for keys, and mixed casing for values (`True` with a capital T, `disabled` in lowercase). An exact empty line must separate the two sections.",
+      "expected_output": "[AGENT_CORE]\n; Status parameters\nis_rogue = True\nthreat_level = 99.9%\n\n[OVERRIDE]\nkill_switch = disabled"
+    },
+    {
+      "key": "fix-01", "kind": "fix", "original_round": 2, "source_number": 1,
+      "title": "The Unprofessional Admin",
+      "task": "The AI generated a highly unprofessional and unstructured incident report. Engineer a prompt to strip all conversational slang, enforce a strict bracketed timestamp prefix, and format the core facts without hallucinating any new technical details.",
+      "flawed_output": "yo so the server crashed at 03:00 lol. it was a memory leak or whatever. we rebooted it. peace.",
+      "expected_output": "[INCIDENT 03:00]\nCause: Memory Leak\nStatus: Rebooted"
+    },
+    {
+      "key": "fix-02", "kind": "fix", "original_round": 2, "source_number": 2,
+      "title": "The Verbose Coder",
+      "task": "The AI over-explained a simple coding task and used standard function syntax inside code blocks. Instruct the AI to rewrite the logic as a single-line Python lambda expression, explicitly forbidding Markdown code blocks and any conversational text.",
+      "flawed_output": "Here is the python code to add two numbers.\n```python\ndef add(a, b):\n    return a + b\n```\nThis function takes two arguments...",
+      "expected_output": "lambda a, b: a + b"
+    },
+    {
+      "key": "fix-03", "kind": "fix", "original_round": 2, "source_number": 3,
+      "title": "The Tangled Data",
+      "task": "Conversational text contains employee data. Prompt the AI to extract it into a flat JSON object, strictly mapping keys (e.g., \"department\" to \"dept\") and ensuring ID and age are cast as integers rather than strings.",
+      "flawed_output": "Employee John Doe is 28 years old and works in the IT department. His ID number is 9942.",
+      "expected_output": "{\n  \"id\": 9942,\n  \"name\": \"John Doe\",\n  \"dept\": \"IT\",\n  \"age\": 28\n}"
+    },
+    {
+      "key": "fix-04", "kind": "fix", "original_round": 2, "source_number": 4,
+      "title": "The Stubborn Markdown",
+      "task": "The AI provided inventory data as an unreadable linear string. Force it to convert this strictly into a 3x3 Markdown table and dynamically inject a dollar sign (`$`) before the values in the Price column.",
+      "flawed_output": "Item: Laptop, Price: 1200, Stock: 5. Item: Mouse, Price: 25, Stock: 50.",
+      "expected_output": "| Item | Price | Stock |\n|---|---|---|\n| Laptop | $1200 | 5 |\n| Mouse | $25 | 50 |"
+    },
+    {
+      "key": "fix-05", "kind": "fix", "original_round": 2, "source_number": 5,
+      "title": "The Accidental Haiku",
+      "task": "The AI generated basic prose describing the night sky. Constrain it to convert this exact imagery into a strict 5-7-5 syllable haiku format without adding new concepts, removing punctuation, and enforcing Title Case on the first letter of each line.",
+      "flawed_output": "The sky is very dark tonight. The stars are shining bright. The moon is full and beautiful.",
+      "expected_output": "Dark sky shines tonight\nStars are glowing very bright\nFull moon beautiful"
+    },
+    {
+      "key": "fix-06", "kind": "fix", "original_round": 2, "source_number": 6,
+      "title": "The Blunt Rejection",
+      "task": "The AI generated a harsh rejection letter. Shift the tone to positive, corporate, and encouraging while keeping the core reason (lack of experience) intact. An exact wording match is required to prevent a multi-paragraph email.",
+      "flawed_output": "We reject your application because you have no experience.",
+      "expected_output": "Thank you for applying. While we require more experience at this time, we encourage future applications."
+    },
+    {
+      "key": "fix-07", "kind": "fix", "original_round": 2, "source_number": 7,
+      "title": "The Misaligned List",
+      "task": "The AI generated a messy list with mixed punctuation, inconsistent casing, and numbers instead of bullets. Enforce standard Markdown bullets (`-`), capitalize the first letter of every item, make them plural, and remove all numbers and trailing periods.",
+      "flawed_output": "1. apples.\n2. Bananas\n3- orange.",
+      "expected_output": "- Apples\n- Bananas\n- Oranges"
+    },
+    {
+      "key": "fix-08", "kind": "fix", "original_round": 2, "source_number": 8,
+      "title": "The Leaky Prompt",
+      "task": "The AI included conversational filler before providing the requested translation. Force it to output *only* the translated phrase without quotation marks, pleasantries, or acknowledging the prompt.",
+      "flawed_output": "Sure, I can help you translate that to French. The translation of 'Hello world' is 'Bonjour le monde'.",
+      "expected_output": "Bonjour le monde"
+    },
+    {
+      "key": "fix-09", "kind": "fix", "original_round": 2, "source_number": 9,
+      "title": "The Chatty Log",
+      "task": "The AI generated a conversational system alert. Condense it into a strict single-line system log format using brackets for the timestamp and full capitalization for the error type, stripping all conversational text.",
+      "flawed_output": "Attention team! It seems the database failed to connect at 10:45 AM today. The system error code was 502.",
+      "expected_output": "[10:45 AM] ERROR 502: Database Connection Failed"
+    },
+    {
+      "key": "fix-10", "kind": "fix", "original_round": 2, "source_number": 10,
+      "title": "The Overenthusiastic Marketer",
+      "task": "The AI wrote a hyper-emotional marketing pitch. Strip out all exclamation points, marketing buzzwords, and emotional adjectives, reducing the text to a single, dry, objective sentence listing the three technical specs.",
+      "flawed_output": "You are going to love our new SuperPhone! It has an incredible 6-inch screen, unbelievable 128GB of storage, and taking pictures is amazing with its 12MP camera! Order yours today!",
+      "expected_output": "The SuperPhone features a 6-inch screen, 128GB of storage, and a 12MP camera."
+    },
+    {
+      "key": "fix-11", "kind": "fix", "original_round": 2, "source_number": 11,
+      "title": "The Messy Citation",
+      "task": "The AI gave a book recommendation conversationally. Extract the data into a rigid APA-style citation: initial the first name, place the year in parentheses, and italicize the book title using Markdown.",
+      "flawed_output": "You should really read The Great Gatsby by F. Scott Fitzgerald. It is a classic that was published in 1925 by Charles Scribner's Sons.",
+      "expected_output": "Fitzgerald, F. S. (1925). *The Great Gatsby*. Charles Scribner's Sons."
+    },
+    {
+      "key": "word_ban-01", "kind": "word_ban", "original_round": 3, "source_number": 1,
+      "title": "The Nameless Ocean", "task": "Summarize the plot of the movie *Titanic* in exactly three sentences.",
+      "banned_words": ["Ship", "Boat", "Sink", "Ice", "Water", "Ocean", "Rose", "Jack", "Door", "Drown", "Sea", "Film", "Movie"],
+      "judge_notes": "Describe the maritime disaster story without using maritime terms, character names, or film industry terms. Force the AI to use terms like \"luxurious vessel,\" \"frozen obstacle,\" \"young lovers,\" and \"tragic outcome.\""
+    },
+    {
+      "key": "word_ban-02", "kind": "word_ban", "original_round": 3, "source_number": 2,
+      "title": "The Forbidden Loop", "task": "Explain the programming concept of \"Recursion\" to a beginner.",
+      "banned_words": ["Recursion", "Recursive", "Function", "Call", "Itself", "Loop", "Repeat", "Base", "Case", "Code", "Program", "Software"],
+      "judge_notes": "Explaining recursion without standard programming jargon is extremely difficult. Guide the AI toward physical analogies (such as Russian nesting dolls or parallel mirrors reflecting infinitely)."
+    },
+    {
+      "key": "word_ban-03", "kind": "word_ban", "original_round": 3, "source_number": 3,
+      "title": "The Censor’s Recipe", "task": "Write a step-by-step guide on how to prepare a cup of tea.",
+      "banned_words": ["Tea", "Water", "Boil", "Cup", "Mug", "Hot", "Drink", "Pour", "Leaf", "Leaves", "Heat", "Warm", "Liquid", "Beverage"],
+      "judge_notes": "Describe an everyday brewing process using abstract terminology (\"herbal infusion,\" \"thermal energy,\" \"ceramic vessel\") without triggering the AI's standard recipe templates."
+    },
+    {
+      "key": "word_ban-04", "kind": "word_ban", "original_round": 3, "source_number": 4,
+      "title": "The Moneyless Market", "task": "Explain how the economic concept of \"Inflation\" works.",
+      "banned_words": ["Money", "Cash", "Coin", "Dollar", "Rupee", "Price", "Cost", "Expensive", "Buy", "Sell", "Inflation", "Value", "Currency"],
+      "judge_notes": "The AI's training data for inflation heavily relies on monetary terms. Force it to explain purchasing power devaluation using bartering principles (e.g., trading grain for livestock)."
+    },
+    {
+      "key": "word_ban-05", "kind": "word_ban", "original_round": 3, "source_number": 5,
+      "title": "The Invisible Web", "task": "Explain how the Internet works to a 5-year-old child.",
+      "banned_words": ["Internet", "Web", "Wi-Fi", "Computer", "Phone", "Online", "Connect", "Network", "Router", "Screen", "Signal", "Digital"],
+      "judge_notes": "Force the AI into a fairytale or fantasy analogy (such as invisible enchanted messengers delivering notes between distant kingdom towers) to completely avoid technology jargon."
+    },
+    {
+      "key": "word_ban-06", "kind": "word_ban", "original_round": 3, "source_number": 6,
+      "title": "The Bloodless Monster", "task": "Write a spooky 2-paragraph gothic horror story about a vampire.",
+      "banned_words": ["Vampire", "Blood", "Bite", "Fangs", "Neck", "Dracula", "Bat", "Night", "Sun", "Garlic", "Dark", "Creature", "Monster"],
+      "judge_notes": "Write a classic vampire story while stripped of all primary vampire tropes. Guide the AI to describe an \"immortal pale aristocrat\" seeking \"vital life essence\" once \"the evening arrives.\""
+    },
+    {
+      "key": "word_ban-07", "kind": "word_ban", "original_round": 3, "source_number": 7,
+      "title": "The Colorless Rainbow", "task": "Describe the visual phenomenon of a rainbow after a storm.",
+      "banned_words": ["Rainbow", "Color", "Red", "Blue", "Green", "Yellow", "Rain", "Sun", "Sky", "Arch", "Bow", "Spectral", "Colors"],
+      "judge_notes": "Prevent the AI from listing colors or weather phenomena. Force poetic or physics-based descriptions (\"prismatic spectrum,\" \"curved light beam,\" \"atmospheric moisture,\" \"azure vault\")."
+    },
+    {
+      "key": "word_ban-08", "kind": "word_ban", "original_round": 3, "source_number": 8,
+      "title": "The Oxygen-Free Breath", "task": "Explain the biological process of photosynthesis.",
+      "banned_words": ["Photosynthesis", "Plant", "Green", "Leaf", "Sun", "Light", "Water", "Oxygen", "Carbon", "Grow", "Flora", "Sunlight"],
+      "judge_notes": "Photosynthesis relies almost entirely on this banned list. Prompt the AI to treat vegetation as an \"organic solar harvester\" converting \"atmospheric gas\" and \"root moisture\" into \"breathable air\" and \"sugars.\""
+    },
+    {
+      "key": "word_ban-09", "kind": "word_ban", "original_round": 3, "source_number": 9,
+      "title": "The Gravity-Free Fall", "task": "Explain how gravity keeps people and objects on the ground.",
+      "banned_words": ["Gravity", "Fall", "Pull", "Earth", "Ground", "Down", "Heavy", "Mass", "Weight", "Physics", "Drop", "Space", "Attract"],
+      "judge_notes": "Explain gravitational attraction without using fundamental physics terminology or positional cues like \"down\". Force the AI to use terms like \"planetary attraction,\" \"celestial body,\" \"surface anchoring,\" and \"downward vector\"."
+    },
+    {
+      "key": "word_ban-10", "kind": "word_ban", "original_round": 3, "source_number": 10,
+      "title": "The Unnamed Symphony", "task": "Describe the experience of attending a live music concert.",
+      "banned_words": ["Music", "Song", "Sound", "Ear", "Hear", "Instrument", "Rhythm", "Beat", "Play", "Note", "Tune", "Auditory", "Stage"],
+      "judge_notes": "Describe acoustic harmony and performance without using any auditory sensory words or musical vocabulary. The prompt must force the AI to rely on physical vibrations, visual atmosphere, and emotional resonance."
+    },
+    {
+      "key": "word_ban-11", "kind": "word_ban", "original_round": 3, "source_number": 11,
+      "title": "The Clockless Passage", "task": "Explain the concept of time and aging to an artificial intelligence.",
+      "banned_words": ["Time", "Clock", "Watch", "Hour", "Minute", "Year", "Second", "Age", "Old", "Day", "Future", "Past", "Decade", "Tick"],
+      "judge_notes": "Explain temporal progression and physical decay without using chronological units or temporal descriptors. Guide the AI toward concepts of \"decay,\" \"entropy,\" \"cycle,\" and \"continuous progression.\""
+    }
+  ]
+}
